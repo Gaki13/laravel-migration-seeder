@@ -26,7 +26,7 @@ class trainsTableSeeder extends Seeder
             $newTrain->in_time = $faker->boolean();
             $newTrain->cancelled = $faker->boolean();
             $newTrain->current_date = '2022-07-12';
-            $newTrain->departure_date= $faker->date();
+            $newTrain->departure_date= $faker->dateTimeBetween('-1 week');
 
             $newTrain->save();
         }
