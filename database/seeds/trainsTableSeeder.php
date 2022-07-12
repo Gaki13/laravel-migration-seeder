@@ -14,6 +14,7 @@ class trainsTableSeeder extends Seeder
     public function run(Faker $faker)
     {
         $newTrain = new Train();
+        
         $newTrain->agency = $faker->company();
         $newTrain->departure_station = $faker->city();
         $newTrain->arrive_station = $faker->city();
@@ -23,7 +24,7 @@ class trainsTableSeeder extends Seeder
         $newTrain->carriages = $faker->randomDigit();
         $newTrain->in_time = $faker->boolean();
         $newTrain->cancelled = $faker->boolean();
-        $newTrain->current_date = $faker->date('d_m_Y',);
+        $newTrain->current_date = '2022-07-12 14:58:03';
 
         $newTrain->save();
     }
