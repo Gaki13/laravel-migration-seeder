@@ -24,7 +24,7 @@ class CreateTrainsTable extends Migration
             $table->tinyInteger('carriages');
             $table->boolean('in_time');
             $table->boolean('cancelled');
-            $table->dateTime('current_date', 0);
+            $table->date('current_date', 0);
 
             $table->timestamps();
         });
